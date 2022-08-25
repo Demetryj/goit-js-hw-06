@@ -3,16 +3,24 @@ const quantityCategories = categories.length;
 console.log(`Number of categories: ${quantityCategories}`);
 console.log('');
 
-const getResult = function (categories) {
-  categories.forEach(category => {
-    const titleOfCategoty = category.firstElementChild.textContent;
-    const numbersOfElements = category.lastElementChild.children.length;
-    console.log(`Category: ${titleOfCategoty}`);
-    console.log(`Elements: ${numbersOfElements}`);
-    console.log('');
-    return;
-  });
-  return;
-};
+categories.forEach(category => {
+  const titleOfCategoty = category.firstElementChild.textContent;
+  const numbersOfElements = category.lastElementChild.children.length;
+  console.log(`Category: ${titleOfCategoty}`);
+  console.log(`Elements: ${numbersOfElements}`);
+  console.log('');
+});
 
-getResult(categories);
+// // const getResult = function (categories) {
+// categories.forEach(category => {
+//   const titleOfCategoty = category.firstElementChild.textContent;
+//   const numbersOfElements = category.lastElementChild.children.length;
+//   console.log(`Category: ${titleOfCategoty}`);
+//   console.log(`Elements: ${numbersOfElements}`);
+//   console.log('');
+//   // return;
+// });
+// //   return;
+// // };
+
+// // getResult(categories);
