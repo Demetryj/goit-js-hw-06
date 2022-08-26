@@ -19,6 +19,7 @@ listOfGallery.style.listStyle = 'none';
 listOfGallery.style.display = 'flex';
 listOfGallery.style.flexWrap = 'wrap';
 listOfGallery.style.justifyContent = 'space-around';
+listOfGallery.style.paddingLeft = 0;
 
 console.log(listOfGallery.style);
 
