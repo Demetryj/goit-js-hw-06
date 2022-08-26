@@ -24,7 +24,7 @@ console.log(listOfGallery.style);
 
 const arrayImg = images
   .map(({ url, alt }) => {
-    return `<li><img src='${url}' alt='${alt}' width="250" height="150" /></li>`;
+    return `<li><img src='${url}' alt='${alt}' width="300" height="200" /></li>`;
   })
   .join('');
 
