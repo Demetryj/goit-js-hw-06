@@ -22,21 +22,19 @@ function createBoxes(amount) {
   let arrayStringsOfTags = [];
 
   for (let i = 1; i <= amount; i += 1) {
-    if (i <= amount) {
-      // console.log(i);
-      width += 10;
-      height += 10;
+    // console.log(i);
+    width += 10;
+    height += 10;
 
-      const divBox = document.createElement('div');
-      const colorOfBox = getRandomHexColor();
+    const divBox = document.createElement('div');
+    const colorOfBox = getRandomHexColor();
 
-      divBox.style.width = `${width}px`;
-      divBox.style.height = `${height}px`;
-      divBox.style.backgroundColor = colorOfBox;
-      divBox.style.marginBottom = '10px';
-      // console.log(divBox);
-      arrayStringsOfTags.push(divBox);
-    }
+    divBox.style.width = `${width}px`;
+    divBox.style.height = `${height}px`;
+    divBox.style.backgroundColor = colorOfBox;
+    divBox.style.marginBottom = '10px';
+    // console.log(divBox);
+    arrayStringsOfTags.push(divBox);
   }
   boxesEl.prepend(...arrayStringsOfTags);
   return;
