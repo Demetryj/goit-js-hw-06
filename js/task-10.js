@@ -55,4 +55,7 @@ function onbtnCreateClick(event) {
 }
 
 const btnDestroyEl = document.querySelector('[data-destroy]');
-btnDestroyEl.addEventListener('click', event => (boxesEl.innerHTML = ''));
+btnDestroyEl.addEventListener('click', event => {
+  boxesEl.innerHTML = '';
+  inputEl.value = '';
+});
