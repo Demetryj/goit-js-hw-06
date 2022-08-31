@@ -23,5 +23,5 @@ function onButtonClick(event) {
 
   widgetColor.textContent = randomHexColor;
 
-  return;
+  // return;
 }

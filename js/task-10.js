@@ -37,7 +37,7 @@ function createBoxes(amount) {
     arrayStringsOfTags.push(divBox);
   }
   boxesEl.prepend(...arrayStringsOfTags);
-  return;
+  // return;
 }
 
 const inputEl = document.querySelector('input');
@@ -49,12 +49,12 @@ function onbtnCreateClick(event) {
 
   createBoxes(inputElValue);
 
-  return;
+  // return;
 }
 
 const btnDestroyEl = document.querySelector('[data-destroy]');
 btnDestroyEl.addEventListener('click', event => {
   boxesEl.innerHTML = '';
   inputEl.value = '';
-  return;
+  // return;
 });
