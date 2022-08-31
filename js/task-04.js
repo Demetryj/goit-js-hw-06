@@ -15,12 +15,12 @@ const result = document.querySelector('#value');
 buttonDecrEl.addEventListener('click', event => {
   counterValue -= 1;
   result.textContent = counterValue;
-  return;
+  // return;
 });
 
 buttonIncrEl.addEventListener('click', event => {
   counterValue += 1;
 
   result.textContent = counterValue;
-  return;
+  // return;
 });

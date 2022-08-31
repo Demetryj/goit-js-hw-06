@@ -9,17 +9,17 @@ function getRandomHexColor() {
 // console.log(randomHexColor);
 
 const buttonEl = document.querySelector('.change-color');
-console.log(buttonEl);
+// console.log(buttonEl);
+const bodyEl = document.querySelector('body');
+const widgetColor = document.querySelector('.color');
 
 buttonEl.addEventListener('click', onButtonClick);
 
 function onButtonClick(event) {
   let randomHexColor = getRandomHexColor();
   // console.log(randomHexColor);
-  const bodyEl = document.querySelector('body');
-  bodyEl.style.backgroundColor = randomHexColor;
 
-  const widgetColor = document.querySelector('.color');
+  bodyEl.style.backgroundColor = randomHexColor;
 
   widgetColor.textContent = randomHexColor;
 

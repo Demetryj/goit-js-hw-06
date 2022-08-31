@@ -16,5 +16,5 @@ inputEl.addEventListener('input', event => {
   } else {
     nameOutputEl.textContent = event.currentTarget.value;
   }
-  return;
+  // return;
 });
